@@ -23,5 +23,6 @@ void loop()
 }
 
 void wlacznik()
-{ // zmiany żeby się przekonać czy jest ok
+{
+  int linia = 10;
 }
