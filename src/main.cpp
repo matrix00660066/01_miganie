@@ -5,6 +5,7 @@
 #include <Arduino.h>
 
 int ledPin = 13;
+int nazwa = 8;
 
 void setup()
 {
