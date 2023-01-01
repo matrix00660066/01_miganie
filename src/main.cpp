@@ -5,7 +5,6 @@
 #include <Arduino.h>
 
 int ledPin = 13;
-int szajs = 2;
 
 void setup()
 {
