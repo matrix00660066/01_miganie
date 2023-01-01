@@ -9,7 +9,6 @@ int ledPin = 13;
 void setup()
 {
   pinMode(ledPin, OUTPUT);
-  // put your setup code here, to run once:
 }
 
 void wlacznik();
