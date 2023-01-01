@@ -23,5 +23,5 @@ void loop()
 }
 
 void wlacznik()
-{
+{ // zmiany żeby się przekonać czy jest ok
 }
