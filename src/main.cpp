@@ -1,3 +1,7 @@
+/*prosty program, którego nawet nie da się nazwać programem. Miga co sekundę wbudowaną diodą led
+        https://github.com/matrix00660066/01_miganie
+*/
+
 #include <Arduino.h>
 
 int ledPin = 13;
@@ -16,12 +20,8 @@ void loop()
   delay(1000);
   digitalWrite(ledPin, 0);
   delay(1000);
-
-  // put your main code here, to run repeatedly:
 }
 
-// #########################################################
 void wlacznik()
 {
 }
-// #########################################################
