@@ -22,7 +22,6 @@ void loop()
   delay(1000);
 }
 
-void wlacznik()
-{
-  int linia = 10;
+void wlacznik() // ta prosta funkjca na razie nie robi nic
+{               // to tylko test czy kompilator nie wywala błędów
 }
