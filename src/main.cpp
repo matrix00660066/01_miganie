@@ -11,7 +11,7 @@ void setup()
   pinMode(ledPin, OUTPUT);
 }
 
-void wlacznik();
+void wlacznik(); // deklaracja funkcji włącznik
 
 void loop()
 {
