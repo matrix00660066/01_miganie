@@ -18,7 +18,7 @@ void loop()
   digitalWrite(ledPin, 1);
   delay(1000);
   digitalWrite(ledPin, 0);
-  delay(1000);
+  delay(500);
 }
 
 void wlacznik() // ta prosta funkjca na razie nie robi nic
