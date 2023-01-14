@@ -5,9 +5,11 @@
 #include <Arduino.h>
 #include <Wire.h>
 #include <LiquidCrystal_I2C.h>
-int ledPin = 13;
 
-LiquidCrystal_I2C lcd(0x27, 16, 2);
+int ledPin = 13;
+byte kontrast = 100;
+
+LiquidCrystal_I2C lcd(0x27, 16, 2); // tworzenie klasy instancji
 
 void setup()
 {
@@ -17,6 +19,7 @@ void setup()
   delay(10);
   lcd.backlight();
   Serial.begin(9600);
+  // lcd.noBacklight();//wyłącza podświetlanie
 }
 
 void wlacznik(); // deklaracja funkcji włącznik
@@ -36,7 +39,7 @@ void loop()
   digitalWrite(ledPin, 0);
   delay(800);
   lcd.setCursor(0, 0);
-  lcd.print("Hallo");
+  lcd.print("     Hallo     ");
   delay(500);
   lcd.setCursor(0, 0);
   lcd.print("                ");
@@ -46,4 +49,12 @@ void loop()
 
 void wlacznik() // ta prosta funkjca na razie nie robi nic, to tylko test czy kompilator nie wywala błędów wywołania funkcji
 {
+  lcd.setCursor(0, 0);
+  lcd.print("To jest funkcja ");
+  delay(1000);
+  lcd.setCursor(0, 0);
+  lcd.print(" Koniec funkcji ");
+  delay(1000);
+  lcd.setCursor(0, 0);
+  lcd.print("                ");
 }
