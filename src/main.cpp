@@ -1,6 +1,12 @@
 /*prosty program, którego nawet nie da się nazwać programem. Miga wbudowaną diodą led
-        https://github.com/matrix00660066/01_miganie
+    https://github.com/matrix00660066/01_miganie
 */
+// kolorowanie składni
+//*kolor
+// kolor
+// todo kolor
+//! kolor
+//?kolor
 
 #include <Arduino.h>
 #include <Wire.h>
@@ -28,7 +34,7 @@ void loop()
 {
   digitalWrite(ledPin, 1);
   delay(50);
-  digitalWrite(ledPin, 0);
+  digitalWrite(ledPin, 0); // kolor
   delay(50);
   digitalWrite(ledPin, 1);
   delay(50);
@@ -46,7 +52,6 @@ void loop()
   delay(2500);
   wlacznik();
 }
-
 void wlacznik() // ta prosta funkjca na razie nie robi nic, to tylko test czy kompilator nie wywala błędów wywołania funkcji
 {
   lcd.setCursor(0, 0);
