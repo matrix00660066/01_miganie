@@ -13,9 +13,10 @@
 #include <LiquidCrystal_I2C.h>
 
 int ledPin = 13;
-byte kontrast = 100;
 
 LiquidCrystal_I2C lcd(0x27, 16, 2); // tworzenie klasy instancji
+
+void wlacznik(); // deklaracja funkcji włącznik
 
 void setup()
 {
@@ -24,11 +25,10 @@ void setup()
   lcd.clear();
   delay(10);
   lcd.backlight();
-  Serial.begin(9600);
+  // Serial.begin(9600);
+  Serial.begin(115200);
   // lcd.noBacklight();//wyłącza podświetlanie
 }
-
-void wlacznik(); // deklaracja funkcji włącznik
 
 void loop()
 {
@@ -58,7 +58,9 @@ void wlacznik() // ta prosta funkjca na razie nie robi nic, to tylko test czy ko
   lcd.print("To jest funkcja ");
   delay(1000);
   lcd.setCursor(0, 0);
-  lcd.print(" Koniec funkcji ");
+  lcd.print(" Koniec");
+  lcd.setCursor(14, 0);
+  lcd.print("i ");
   delay(1000);
   lcd.setCursor(0, 0);
   lcd.print("                ");
